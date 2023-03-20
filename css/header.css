@@ -290,6 +290,7 @@
             height: 45px;
         }
         .breakingTitle {
+            font-size: 12px;
             width: 10%;
         }
         
@@ -301,6 +302,7 @@
         }
         
         .time {
+            font-size: 14px;
             z-index: -1;
             width: 20%;
         }
@@ -339,10 +341,10 @@
         }
         
         .bottomHeader {
-            width: 80%;
+            width: 90%;
             position: fixed;
-            bottom: 15%;
-            translate: 12%;
+            bottom: 10%;
+            translate: 6%;
             color: var(--text-color);
             display: flex;
             justify-content: center;
