@@ -331,6 +331,14 @@
             gap:25px;
         }
 
+        .headTitle {
+            font-size: 10px;
+        }
+        
+        .title {
+            font-size: 12px;
+        }
+
         .head{
             display: flex;
             flex-direction: row;
