@@ -3,5 +3,15 @@
     --secondary-color: rgba(215, 55, 63, 1);
     --third-color: rgba(20, 115, 230, 1);
     --text-color: rgb(255, 255, 255);
+    --dark-text-color: rgba(44, 44, 44, 1);
+    /*icon color*/
+    --backgroud-icon-color: rgba(44, 44, 44, 1);
+    --icon-color: rgb(255, 255, 255);
+    --hover-icon-color: rgba(215, 55, 63, 1);
+
+    /* image color */
+    --placeholder-image-color:rgb(211, 211, 211);
+    
+    
 }
 
