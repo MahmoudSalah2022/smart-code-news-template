@@ -17,10 +17,16 @@ ul{
 
     /* start content section */
     .NewsBlock{
-        gap:16px
+        gap:16px;
+    }
+    
+    .styleOne{
+        width: 100% ;
+        height: auto;
     }
 
     .imageNews img{
+        object-fit: cover;
         border-radius: 15px;
         background-color: var(--placeholder-image-color);
     }
@@ -42,7 +48,6 @@ ul{
         padding-left: 6px;
         width: 300px;
         overflow: hidden;
-        overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 2;
@@ -62,6 +67,9 @@ ul{
         height: 16px;
     }
 
+    .newsTools{
+        padding-top: 40px;
+    }
     .readingTime{
         background-color: var(--primary-color);
         color: var(--text-color);
@@ -86,11 +94,6 @@ ul{
         background-color: var(--primary-color);
         color: var(--icon-color);
         border-radius: 50px;
-    }
-
-    .styleOne{
-        width: 378px ;
-        height: auto;
     }
 
     .styleTwo{
