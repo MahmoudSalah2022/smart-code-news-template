@@ -24,6 +24,13 @@ ul{
         width: 100% ;
         height: auto;
     }
+    .imageNews a{
+        text-decoration: none;
+    }
+
+    .imageNews::before{
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.75) 25.52%, rgba(0, 0, 0, 0) 100%);
+    }
 
     .imageNews img{
         object-fit: cover;
@@ -31,9 +38,6 @@ ul{
         background-color: var(--placeholder-image-color);
     }
 
-    .imageNews a{
-        text-decoration: none;
-    }
 
 
     .newsTilteTime{
@@ -256,7 +260,7 @@ ul{
         width: 100%;
     }
     .BNheadsection{
-        width: 361px;
+        width: 300px;
         height: 70px;
         background-color: var(--primary-color);
         color: var(--text-color);
