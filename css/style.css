@@ -89,12 +89,12 @@ ul{
     }
 
     .styleOne{
-        width: 327px ;
+        width: 378px ;
         height: auto;
     }
 
     .styleTwo{
-        width: 327px ;
+        width: 378px ;
         height: auto;
     }
 
@@ -149,6 +149,10 @@ ul{
 
 
     /*start slider*/
+
+    .mainslider{
+        padding-top: 16px;
+    }
 
     .mainslide{
         width: 100%;
@@ -232,5 +236,54 @@ ul{
     }
 
     /*end slider*/
+
+    /*start ads banner*/
+    .hAd{
+        width: 100%;
+        height: auto;
+        padding-top: 16px;
+    }
+    .hAd img{
+        border-radius: 15px;
+    }
+    /*end ads banner*/
+
+    /* start Breaking News */
+    .breakingNews{
+        width: 100%;
+    }
+    .BNheadsection{
+        width: 361px;
+        height: 70px;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        font-size: 28px;
+        padding: 0 24px;
+        border-radius: 45px 0px 0px 45px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        margin-top: 40px;
+    }
+    .BNSubSection{
+        width: inherit;
+    }
+
+    .BNSubSectionheader{
+        width: 248px;
+        height: 48px;
+        padding: 0px 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        background-color: var(--third-color);
+        color: var(--text-color);
+        font-size: 20px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 45px 0px 0px 45px;
+    }
+
+    .BNSubSectionNews{
+        width: inherit;
+    }
+
+    /* end Breaking News */
 
     /* end content section */
