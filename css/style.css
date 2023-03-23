@@ -68,7 +68,7 @@ ul{
     }
 
     .newsTools{
-        padding-top: 40px;
+        /* padding-top: 40px; */
     }
     .readingTime{
         background-color: var(--primary-color);
