@@ -255,10 +255,11 @@ ul{
     /*end ads banner*/
 
     /* start Breaking News */
-    .breakingNews{
-        width: 100%;
-    }
     .BNheadsection{
+        width: inherit;
+    }
+
+    .BNSectionheader{
         width: 300px;
         height: 70px;
         background-color: var(--primary-color);
@@ -269,6 +270,7 @@ ul{
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
         margin-top: 40px;
     }
+    
     .BNSubSection{
         width: inherit;
     }
@@ -284,10 +286,6 @@ ul{
         font-size: 20px;
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
         border-radius: 45px 0px 0px 45px;
-    }
-
-    .BNSubSectionNews{
-        width: inherit;
     }
 
     /* end Breaking News */
