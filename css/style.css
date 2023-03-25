@@ -15,6 +15,12 @@ ul{
     list-style-type: none;
 }
 
+a{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
     /* start content section */
     .NewsBlock{
         gap:16px;
@@ -342,7 +348,7 @@ ul{
     }
     /* end mainsection*/
 
-    /* start article and head of editor */
+    /* start article for head of editor */
 
     .articlEditorheader{
         width: 100%;
@@ -358,7 +364,12 @@ ul{
         border-radius: 15px;
         color: var(--text-color);
     }
-
+    
+    .articlEditor  a{
+        color: var(--primary-color);
+        
+    }
+    
     .articlEditorheader > p{
         font-style: normal;
         font-weight: 400;
@@ -367,6 +378,7 @@ ul{
         padding: 10px 0;
 
     }
+
     .editorName{
         font-style: normal;
         font-weight: 600;
@@ -386,12 +398,21 @@ ul{
     }
 
     .follow{
+        padding: 0 50px;
         width: 85px;
         height: 25px;
         background-color: var(--fourth-color);
         border-radius: 15px;
     }
 
-    /* end article and head of editor */
+    .share{
+        padding: 0 50px;
+        width: 85px;
+        height: 25px;
+        background-color: var(--fourth-color);
+        border-radius: 15px;
+    }
+
+    /* end article for head of editor */
 
     /* end content section */
