@@ -356,7 +356,7 @@ ul{
         background: var(--primary-color);
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
-        color: var(--text-color)
+        color: var(--text-color);
     }
 
     .articlEditorheader > p{
@@ -383,6 +383,13 @@ ul{
         font-weight: 500;
         font-size: 18px;
         line-height: 34px;
+    }
+
+    .follow{
+        width: 85px;
+        height: 25px;
+        background-color: var(--fourth-color);
+        border-radius: 15px;
     }
 
     /* end article and head of editor */
