@@ -38,13 +38,34 @@
     }
     
     .newsText {
-        width: 82%;
+        width: 91%;
         font-size: 14px;
         font-weight: bold;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        padding-right: 9.1%;
+        white-space: nowrap;
+        overflow: hidden;
+        position: absolute;
     }
+    .newsText > ul {
+        overflow: hidden;
+    }
+    .newsText > ul > li > a {
+        color:var(--text-color)
+    }
+
+    .newsText > ul > li {
+        display: inline-block;
+        animation: newsText 30s linear infinite;
+    }
+
+    @keyframes newsText {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(100%, 0);
+        }
+      }
     
     .time {
         font-size: 18px;
@@ -301,7 +322,6 @@
         .newsText {
             z-index: -2;
             white-space: nowrap;
-            width: 70%;
             padding-right: 5px;
         }
         
