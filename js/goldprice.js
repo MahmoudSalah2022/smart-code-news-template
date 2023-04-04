@@ -1,14 +1,15 @@
 // start open gold price and close//
-let closeButton = document.querySelector('.closeButton');
+let closegButton = document.getElementById('closeButton');
 let mainGoldprice = document.getElementById('mainGoldprice');
 let goldpricetoggle= document.getElementById('goldpricetoggle');
 
-closeButton.addEventListener("mousedown", () => {
-    mainGoldprice.classList.remove('showAnddisplay') ;
-    console.log("test");
-});
+
 goldpricetoggle.addEventListener("mousedown", () => {
     mainGoldprice.classList.add('showAnddisplay') ;
+    console.log("test");
+});
+closegButton.addEventListener("mousedown", () => {
+    mainGoldprice.classList.remove('showAnddisplay') ;
     console.log("test");
 });
 // end open gold price and close//

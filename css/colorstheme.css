@@ -9,6 +9,7 @@
     --text-color: rgb(255, 255, 255);
     --dark-text-color: rgba(44, 44, 44, 1);
     --golden-color: #D3AB42;
+    --dark-overlay: rgba(44, 44, 44, 0.61);
     /*icon color*/
     --backgroud-icon-color: rgba(44, 44, 44, 1);
     --icon-color: rgb(255, 255, 255);

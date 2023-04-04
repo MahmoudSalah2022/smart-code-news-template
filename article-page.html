@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/articlePage.css">
+    <link rel="stylesheet" href="css/goldPrice.css">
+    <link rel="stylesheet" href="css/convertCurrancy.css">
+    <link rel="stylesheet" href="css/footballMatches.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -71,14 +74,16 @@
                     </div>
                     <div class="time">
                         <iframe src="https://free.timeanddate.com/clock/i8s4q9py/n53/fn13/fs18/fcfff/tct/pct/ts1" frameborder="0" width="120" height="23" allowtransparency="true"></iframe>
-
+    
                     </div>
                 </div>
                 <div class="midHeader">
                     <div class="midHeadercontainer container">
                         <div class="logoAndHead">
                             <div class="logo">
-                                <img src="https://via.placeholder.com/133x64" width="133px" height="64px">
+                                <a href="index.html">
+                                    <img src="https://via.placeholder.com/133x64" width="133px" height="64px">
+                                </a>
                             </div>
                             <div class="head">
                                 <div class="ceo">
@@ -104,8 +109,8 @@
                         <div class="headerWidget">
                             <div class="weather">
                                 <div class="weatherIcon">
-                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
-                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                    <img src="assetes/sun2.png" width="50px" height="50px">
+                                    <img src="assetes/Moon2.png" width="50px" height="50px">
                                 </div>
                                 <div class="weatherDetails">
                                     <p>العظمى °27</p>
@@ -113,9 +118,9 @@
                                     <p>الصغرى °17</p>
                                 </div>
                             </div>
-                            <div class="PrayerTime">
+                            <div id="PrayerTime" class="PrayerTime">
                                 <div class="PrayerIcon">
-                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                    <img src="assetes/619087.png" width="50px" height="50px">
                                 </div>
                                 <div class="PrayerDetails">
                                     <p>صلاة الظهر</p>
@@ -196,14 +201,16 @@
                     </div>
                     <div class="time">
                         <iframe src="https://free.timeanddate.com/clock/i8s4q9py/n53/fn13/fs18/fcfff/tct/pct/ts1" frameborder="0" width="120" height="23" allowtransparency="true"></iframe>
-
+    
                     </div>
                 </div>
                 <div class="midHeader">
                     <div class="midHeadercontainer container">
                         <div class="logoAndHead">
                             <div class="logo">
-                                <img src="https://via.placeholder.com/133x64" width="133px" height="64px">
+                                <a href="index.html">
+                                    <img src="https://via.placeholder.com/133x64" width="133px" height="64px">
+                                </a>
                             </div>
                             <div class="head">
                                 <div class="ceo">
@@ -298,14 +305,16 @@
                     </div>
                     <div class="time">
                         <iframe src="https://free.timeanddate.com/clock/i8s4q9py/n53/fn13/fs18/fcfff/tct/pct/ts1" frameborder="0" width="120" height="23" allowtransparency="true"></iframe>
-
+    
                     </div>
                 </div>
                 <div class="midHeader">
                     <div class="midHeadercontainer">
                         <div class="logoAndHead">
                             <div class="logo">
-                                <img src="https://via.placeholder.com/91x44" width="91px" height="44px">
+                                <a href="index.html">
+                                    <img src="https://via.placeholder.com/91x44" width="91px" height="44px">
+                                </a>
                             </div>
                             <div class="head">
                                 <div class="ceo">
@@ -333,15 +342,54 @@
                 <div class="bottomHeader">
                     <div class="bottomHeadercontainer container">
                         <ul class="navbarlist">
-                            <li><i class="fas fa-bars"></i></li>
+                            <li id="burgermenuToggle"><i class="fas fa-bars"></i></li>
                             <li><div class="vlstickybottom"></div></li>
                             <li><i class="fas fa-home"></i></li>
                             <li><i class="fas fa-bullhorn"></i></li>
                             <li><i class="fas fa-newspaper"></i></li>
-    
                         </ul>
                     </div>
                 </div>
+            </div>
+    
+            <div class="paryertimesubmenu ">
+                <ul id="paryertimeItems" class="list-group paryertimeItems">
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row-reverse justify-content-center align-items-center gap-2">
+                            <p>صلاة الظهر</p>
+                            <div class="vlPrayer"></div>
+                            <p>12:03 مساءاً</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row-reverse justify-content-center align-items-center gap-2">
+                            <p>صلاة العصر</p>
+                            <div class="vlPrayer"></div>
+                            <p>12:03 مساءاً</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row-reverse justify-content-center align-items-center gap-2">
+                            <p>صلاة المغرب</p>
+                            <div class="vlPrayer"></div>
+                            <p>12:03 مساءاً</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row-reverse justify-content-center align-items-center gap-2">
+                            <p>صلاة العشاء</p>
+                            <div class="vlPrayer"></div>
+                            <p>12:03 مساءاً</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row-reverse justify-content-center align-items-center gap-2">
+                            <p>صلاة الفجر</p>
+                            <div class="vlPrayer"></div>
+                            <p>12:03 مساءاً</p>
+                        </div>
+                    </li>
+                  </ul>
             </div>
         </header>
         <!--end header-->
@@ -421,10 +469,19 @@
                                     هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية، لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص الناتح خالي من التكرار، أو أي كلمات أو عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص لوريم إيبسوم حقيقي على الإنترنت.
                                 </p>
                                 <div class="videoArticle w-100 d-flex flex-row justify-content-center align-items-center">
-                                    <div class="palyicon p-10">
+                                    <div id="videopalyicon"class="palyicon p-10">
                                         <i class="fas fa-play"></i>
                                     </div>
+                                    <div id="videopalyer" class="videopalyer flex-column justify-content-center align-items-center">
+                                        <div class="closeVideoButton p-4">
+                                            <div id="closeVButton" class="closeMButton d-flex flex-row justify-content-end align-items-end">
+                                                <i class="fas fa-times"></i>
+                                            </div>
+                                        </div>
+                                        <video class="d-flex" src=""controls></video>
+                                    </div>
                                 </div>
+
                                 <p>
                                     هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية، لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص الناتح خالي من التكرار، أو أي كلمات أو عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص لوريم إيبسوم حقيقي على الإنترنت.
                                 </p>
@@ -468,7 +525,7 @@
                         </div>
                     </div>
                     <div class="RNSection">
-                        <div class="row d-flex flex-md-row flex-sm-column flex-wrap justify-content-lg-between justify-content-md-end gy-2 p-0 m-0">
+                        <div class="row d-flex flex-md-row-reverse flex-sm-column flex-wrap justify-content-lg-between justify-content-md-end gy-2 p-0 m-0">
                             <div class="col-md-6 col-lg-4 NewsBlock d-flex justify-content-lg-center justify-content-center">            
                                 <div class="styleOne d-flex flex-column justify-content-between p-0 m-0">
                                     <div class="imageNews">
@@ -485,18 +542,36 @@
                                         </a>
                                     </div>
             
-                                    <div class="newsTools d-flex flex-row-reverse justify-content-between align-items-center px-1 pt-md-5 pt-3">
+                                    <div class="newsTools d-flex flex-row-reverse justify-content-between align-items-center px-1 pt-md-3 pt-3">
                                         <div class="sectionOne d-flex flex-row-reverse align-items-center gap-2">
                                             <div class="readingTime d-flex flex-row-reverse p-2 gap-1 align-items-center">
                                                 <p>مدة القراءة</p>
                                                 <div class="vlRtime"></div>
                                                 <p>دقيقتين</p>
                                             </div>
-                                            <div class="audioFile d-flex justify-content-center align-items-center">
+                                            <div id="audioFile" class="audioFile d-flex justify-content-center align-items-center">
                                                 <i class="fas fa-headphones"></i>
                                             </div>
-                                            <div class="videoFile  d-flex justify-content-center align-items-center">
+                                            <div id="audiopalyer" class="audiopalyer flex-row justify-content-center align-items-center">
+                                                <div class="closeAudioButton p-4">
+                                                    <div id="closeAButton" class="closeAButton closeMButton d-flex flex-row justify-content-start align-items-start">
+                                                        <i class="fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                <audio controls src="" class=""></audio>
+                                                </div>
+                                            </div>
+                                            <div id="videoFile" class="videoFile  d-flex justify-content-center align-items-center">
                                                 <i class="fab fa-youtube"></i>
+                                            </div>
+                                            <div id="videopalyer" class="videopalyer flex-column justify-content-center align-items-center">
+                                                <div class="closeVideoButton p-4">
+                                                    <div id="closeVButton" class="closevideo closeMButton d-flex flex-row justify-content-start align-items-start">
+                                                        <i class="fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                                <video class="d-flex" src=""controls></video>
                                             </div>
                                         </div>
                                         <div class="sectionTwo">
@@ -523,18 +598,36 @@
                                         </a>
                                     </div>
             
-                                    <div class="newsTools d-flex flex-row-reverse justify-content-between align-items-center px-1 pt-md-5 pt-3">
+                                    <div class="newsTools d-flex flex-row-reverse justify-content-between align-items-center px-1 pt-md-3 pt-3">
                                         <div class="sectionOne d-flex flex-row-reverse align-items-center gap-2">
                                             <div class="readingTime d-flex flex-row-reverse p-2 gap-1 align-items-center">
                                                 <p>مدة القراءة</p>
                                                 <div class="vlRtime"></div>
                                                 <p>دقيقتين</p>
                                             </div>
-                                            <div class="audioFile d-flex justify-content-center align-items-center">
+                                            <div id="audioFile" class="audioFile d-flex justify-content-center align-items-center">
                                                 <i class="fas fa-headphones"></i>
                                             </div>
-                                            <div class="videoFile  d-flex justify-content-center align-items-center">
+                                            <div id="audiopalyer" class="audiopalyer flex-row justify-content-center align-items-center">
+                                                <div class="closeAudioButton p-4">
+                                                    <div id="closeAButton" class="closeAButton closeMButton d-flex flex-row justify-content-start align-items-start">
+                                                        <i class="fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                <audio controls src="" class=""></audio>
+                                                </div>
+                                            </div>
+                                            <div id="videoFile" class="videoFile  d-flex justify-content-center align-items-center">
                                                 <i class="fab fa-youtube"></i>
+                                            </div>
+                                            <div id="videopalyer" class="videopalyer flex-column justify-content-center align-items-center">
+                                                <div class="closeVideoButton p-4">
+                                                    <div id="closeVButton" class="closevideo closeMButton d-flex flex-row justify-content-start align-items-start">
+                                                        <i class="fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                                <video class="d-flex" src=""controls></video>
                                             </div>
                                         </div>
                                         <div class="sectionTwo">
@@ -561,18 +654,36 @@
                                         </a>
                                     </div>
             
-                                    <div class="newsTools d-flex flex-row-reverse justify-content-between align-items-center px-1 pt-md-5 pt-3">
+                                    <div class="newsTools d-flex flex-row-reverse justify-content-between align-items-center px-1 pt-md-3 pt-3">
                                         <div class="sectionOne d-flex flex-row-reverse align-items-center gap-2">
                                             <div class="readingTime d-flex flex-row-reverse p-2 gap-1 align-items-center">
                                                 <p>مدة القراءة</p>
                                                 <div class="vlRtime"></div>
                                                 <p>دقيقتين</p>
                                             </div>
-                                            <div class="audioFile d-flex justify-content-center align-items-center">
+                                            <div id="audioFile" class="audioFile d-flex justify-content-center align-items-center">
                                                 <i class="fas fa-headphones"></i>
                                             </div>
-                                            <div class="videoFile  d-flex justify-content-center align-items-center">
+                                            <div id="audiopalyer" class="audiopalyer flex-row justify-content-center align-items-center">
+                                                <div class="closeAudioButton p-4">
+                                                    <div id="closeAButton" class="closeAButton closeMButton d-flex flex-row justify-content-start align-items-start">
+                                                        <i class="fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                <audio controls src="" class=""></audio>
+                                                </div>
+                                            </div>
+                                            <div id="videoFile" class="videoFile  d-flex justify-content-center align-items-center">
                                                 <i class="fab fa-youtube"></i>
+                                            </div>
+                                            <div id="videopalyer" class="videopalyer flex-column justify-content-center align-items-center">
+                                                <div class="closeVideoButton p-4">
+                                                    <div id="closeVButton" class="closevideo closeMButton d-flex flex-row justify-content-start align-items-start">
+                                                        <i class="fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                                <video class="d-flex" src=""controls></video>
                                             </div>
                                         </div>
                                         <div class="sectionTwo">
@@ -596,7 +707,7 @@
                 <div class="row col-12 topFooter d-flex flex-column flex-md-row-reverse justify-content-start align-items-start p-md-5 p-4 gap-4">
                     <div class="col-12 col-lg-4 col-md-6 col-sm-10 d-flex flex-column flex-md-column align-content-md-end align-items-md-end align-content-end align-items-end gap-4">
                         <div class="footerLogo">
-                            <a href="http://">
+                            <a href="index.html">
                                 <img src="https://via.placeholder.com/210x83" width="210px" height="83px">
                             </a>
                         </div>
@@ -749,8 +860,686 @@
                 
             </footer>
         <!-- end footer -->
+    <!-- start Burger Menu -->
+    <div id="burgermenuoverlay" class="burgermenuoverlay">
+        <div class="burgermenu d-flex d-md-none flex-column gap-4 justify-content-start align-items-end">
+            <div class="closeGoldbutton">
+                <div class="closeButton d-flex flex-row justify-content-end align-items-end">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="SearchBAr">
+                <div class="searchIcon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="vl"></div>
+                <div class="searchField">
+                    <input type="search" class="searchInput" placeholder="ما الخبر الذي تبحث عنه .... ؟">
+                </div>
+            </div>
+            <div class="w-100 mainSection d-flex flex-column align-items-end">
+                <div class="headSectionTitle">
+                    <label>الأقسام</label>
+                </div>
+                <div class="allsections ">
+                    <div class="sectiontitle "> <p>عاجل</p> </div>
+                    <div class="sectiontitle "> <p>السياسة</p> </div>
+                    <div class="sectiontitle "> <p>الاقتصاد</p> </div>
+                    <div class="sectiontitle "> <p>الرياضة</p> </div>
+                    <div class="sectiontitle "> <p>السياحة</p> </div>
+                    <div class="sectiontitle "> <p>التعليم</p> </div>
+                    <div class="sectiontitle "> <p>الزراعة</p> </div>
+                    <div class="sectiontitle "> <p>تحقيقات</p> </div>
+                    <div class="sectiontitle "> <p>حوادث</p> </div>
+                    <div class="sectiontitle "> <p>تقارير</p> </div>
+                </div>
+            </div>
+            <div class="w-100 mainNotfication d-flex flex-column align-items-end">
+                <div class="headSectionTitle">
+                    <label>الأشعارات</label>
+                </div>
+                <div class="notficationSections ">
+                    <div class="notficationtitle "> <p>استقبال إشعارات  بأحدث الأخبار</p> </div>
+                    <div class="notficationToggel "> 
+                        
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-100 mainFollowUs d-flex flex-column align-items-end">
+                <div class="headSectionTitle">
+                    <label>تابعنا على</label>
+                </div>
+                <div class="FollowUsIcon">
+                    <div class="w-100 d-flex flex-row justify-content-between gap-4">
+                        <div class="socialMediaIcon">
+                            <a href="http://">
+                            <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="socialMediaIcon">
+                            <a href="http://">
+                            <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="socialMediaIcon">
+                            <a href="http://">
+                            <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="socialMediaIcon">
+                            <a href="http://">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Burger Menu -->
+    <!-- start wedgit for currancy&matches&gold -->
+    <!-- start gold wedgite -->
+    <div id="goldpricetoggle" class="goldpricetoggle d-flex flex-row-reverse justify-content-end align-items-center gap-4">
+        <label>اسعار الذهب</label>
+        <i class="fas fa-ring"></i>
+    </div>
+    <div id="mainGoldprice" class="mainGoldprice flex-column align-items-center justify-content-center">
+        <div class="goldprices d-flex flex-column align-items-center justify-content-start m-4 p-4">
+            <div class="closeGoldbutton">
+                <div id="closeButton" class="closeButton d-flex flex-row justify-content-end align-items-end">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="pricGoldname p-4">
+                <label>اسعار الذهب</label>
+            </div>   
+            <div class="slider-container">
+                <div class="inner-slider">
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <div class="goldpricecard d-flex flex-column align-items-center justify-content-between">
+                            <label class="goldCarat d-flex flex-column align-items-center p-4"> عيار 24</label>
+                            <div class="sellGoldpraice d-flex flex-column justify-content-center align-items-center gap-0">
+                                <label class="sellPrice">سعر البيع</label>
+                                <label class="goldprice d-flex  flex-row-reverse align-items-center gap-1">
+                                    <div class="pricenumber">1600</div>
+                                    <div class="pricecurrency">جنية مصري</div>
+                                </label>
+                            </div>
+                            <div class="hlGold"></div>
+                            <div class="buyGoldpraice d-flex flex-column justify-content-center align-items-center gap-0">
+                                <label class="buyPrice">سعر الشراء</label>
+                                <label class="goldprice d-flex  flex-row-reverse align-items-center gap-1">
+                                    <div class="pricenumber">1600</div>
+                                    <div class="pricecurrency">جنية مصري</div>
+                                </label>
+                            </div>
+                            <label class="goldrate goldRateDown d-flex flex-row align-items-center justify-content-center p-2 gap-1">
+                                <div class="ratenumber">
+                                   <label>2%</label>
+                                </div>
+                                <div class="arrowrate">
+                                    <i class="fas fa-arrow-down"></i>
+                                </div>
+                            </label>
+                        </div> 
+                    </div>
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <div class="goldpricecard d-flex flex-column align-items-center justify-content-between">
+                            <label class="goldCarat d-flex flex-column align-items-center p-4"> عيار 22</label>
+                            <div class="sellGoldpraice d-flex flex-column justify-content-center align-items-center gap-0">
+                                <label class="sellPrice">سعر البيع</label>
+                                <label class="goldprice d-flex  flex-row-reverse align-items-center gap-1">
+                                    <div class="pricenumber">1600</div>
+                                    <div class="pricecurrency">جنية مصري</div>
+                                </label>
+                            </div>
+                            <div class="hlGold"></div>
+                            <div class="buyGoldpraice d-flex flex-column justify-content-center align-items-center gap-0">
+                                <label class="buyPrice">سعر الشراء</label>
+                                <label class="goldprice d-flex  flex-row-reverse align-items-center gap-1">
+                                    <div class="pricenumber">1600</div>
+                                    <div class="pricecurrency">جنية مصري</div>
+                                </label>
+                            </div>
+                            <label class="goldrate goldRateUP d-flex flex-row align-items-center justify-content-center p-2 gap-1">
+                                <div class="ratenumber">
+                                   <label>2%</label>
+                                </div>
+                                <div class="arrowRate">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <div class="goldpricecard d-flex flex-column align-items-center justify-content-between">
+                            <label class="goldCarat d-flex flex-column align-items-center p-4"> عيار 21</label>
+                            <div class="sellGoldpraice d-flex flex-column justify-content-center align-items-center gap-0">
+                                <label class="sellPrice">سعر البيع</label>
+                                <label class="goldprice d-flex  flex-row-reverse align-items-center gap-1">
+                                    <div class="pricenumber">1600</div>
+                                    <div class="pricecurrency">جنية مصري</div>
+                                </label>
+                            </div>
+                            <div class="hlGold"></div>
+                            <div class="buyGoldpraice d-flex flex-column justify-content-center align-items-center gap-0">
+                                <label class="buyPrice">سعر الشراء</label>
+                                <label class="goldprice d-flex  flex-row-reverse align-items-center gap-1">
+                                    <div class="pricenumber">1600</div>
+                                    <div class="pricecurrency">جنية مصري</div>
+                                </label>
+                            </div>
+                            <label class="goldrate goldRateDown d-flex flex-row align-items-center justify-content-center p-2 gap-1">
+                                <div class="ratenumber">
+                                   <label>2%</label>
+                                </div>
+                                <div class="arrowrate">
+                                    <i class="fas fa-arrow-down"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <div class="goldpricecard d-flex flex-column align-items-center justify-content-between">
+                            <label class="goldCarat d-flex flex-column align-items-center p-4"> عيار 18</label>
+                            <div class="sellGoldpraice d-flex flex-column justify-content-center align-items-center gap-0">
+                                <label class="sellPrice">سعر البيع</label>
+                                <label class="goldprice d-flex  flex-row-reverse align-items-center gap-1">
+                                    <div class="pricenumber">1600</div>
+                                    <div class="pricecurrency">جنية مصري</div>
+                                </label>
+                            </div>
+                            <div class="hlGold"></div>
+                            <div class="buyGoldpraice d-flex flex-column justify-content-center align-items-center gap-0">
+                                <label class="buyPrice">سعر الشراء</label>
+                                <label class="goldprice d-flex  flex-row-reverse align-items-center gap-1">
+                                    <div class="pricenumber">1600</div>
+                                    <div class="pricecurrency">جنية مصري</div>
+                                </label>
+                            </div>
+                            <label class="goldrate goldRateDown d-flex flex-row align-items-center justify-content-center p-2 gap-1">
+                                <div class="ratenumber">
+                                   <label>2%</label>
+                                </div>
+                                <div class="arrowrate">
+                                    <i class="fas fa-arrow-down"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <div class="goldpricecard d-flex flex-column align-items-center justify-content-between">
+                            <label class="goldCarat d-flex flex-column align-items-center p-4"> عيار 14</label>
+                            <div class="sellGoldpraice d-flex flex-column justify-content-center align-items-center gap-0">
+                                <label class="sellPrice">سعر البيع</label>
+                                <label class="goldprice d-flex  flex-row-reverse align-items-center gap-1">
+                                    <div class="pricenumber">1600</div>
+                                    <div class="pricecurrency">جنية مصري</div>
+                                </label>
+                            </div>
+                            <div class="hlGold"></div>
+                            <div class="buyGoldpraice d-flex flex-column justify-content-center align-items-center gap-0">
+                                <label class="buyPrice">سعر الشراء</label>
+                                <label class="goldprice d-flex  flex-row-reverse align-items-center gap-1">
+                                    <div class="pricenumber">1600</div>
+                                    <div class="pricecurrency">جنية مصري</div>
+                                </label>
+                            </div>
+                            <label class="goldrate goldRateDown d-flex flex-row align-items-center justify-content-center p-2 gap-1">
+                                <div class="ratenumber">
+                                   <label>2%</label>
+                                </div>
+                                <div class="arrowrate">
+                                    <i class="fas fa-arrow-down"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end gold wedgite -->
+
+    <!-- start convert currancy wedgite -->
+    <div id="convertCurrancyToggle" class="convertCurrancyToggle d-flex flex-row-reverse justify-content-end align-items-center gap-4">
+        <label>اسعار العملات</label>
+        <i class="fas fa-money-bill-alt "></i>
+    </div>
+    <!-- end convert currancy wedgite -->
+
+    <!-- start football matches  -->
+    <div id="footballMatchesToggle" class="footballMatchesToggle d-flex flex-row-reverse justify-content-end align-items-center gap-4">
+        <label>جدول المباريات</label>
+        <i class="fas fa-futbol"></i>
+    </div>
+    <div id="mainfootballMatches" class="mainfootballMatches flex-column align-items-center justify-content-center">
+        <div class="footballMatches d-flex flex-column align-items-center justify-content-start m-4">
+            <div class="fMHeader">
+                <div class="closeMatchesButton p-4">
+                    <div id="closeMButton" class="closeMButton d-flex flex-row justify-content-end align-items-end">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="mainfootballname d-flex flex-row justify-content-center align-items-center pt-0 p-4">
+                    <label>مباريات الأسبوع</label>
+                </div>   
+            </div>
+            <div class="container w-100 footballMatchesTable p-4">
+                <div class="row matches d-flex flex-column flex-md-row flex-nowrap flex-md-wrap justify-content-start justify-content-md-end">
+                    <div class="cellMatche col col-md-6 pb-4 p-0">
+                        <div class="date d-flex flex-row-reverse justify-content-center align-items-center">
+                            <div class="day">
+                                <p>السبت</p>
+                            </div>
+                            <div>/</div>
+                            <div class="numberOfDayAndMonth d-flex flex-row-reverse justify-content-center align-items-center">
+                                <div class="numberOfDay">
+                                    <p>11</p>
+                                </div>
+                                <div class="Month"><p>مارس</p></div>
+                            </div>
+
+                        </div>
+                        <div class="matcheTime d-flex flex-row-reverse justify-content-center align-items-center">
+                            <p>7:30 pm</p>
+                        </div>
+                        <div class="twoTeam d-flex flex-row-reverse justify-content-center align-items-center pt-2 gap-3">
+                            <div class="teamHost d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الزمالك</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                            <div class="vs d-flex flex-row justify-content-center align-items-center">x</div>
+                            <div class="teamGuest d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الأهلي</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellMatche col col-md-6 pb-4 p-0">
+                        <div class="date d-flex flex-row-reverse justify-content-center align-items-center">
+                            <div class="day">
+                                <p>السبت</p>
+                            </div>
+                            <div>/</div>
+                            <div class="numberOfDayAndMonth d-flex flex-row-reverse justify-content-center align-items-center">
+                                <div class="numberOfDay">
+                                    <p>11</p>
+                                </div>
+                                <div class="Month"><p>مارس</p></div>
+                            </div>
+
+                        </div>
+                        <div class="matcheTime d-flex flex-row-reverse justify-content-center align-items-center">
+                            <p>7:30 pm</p>
+                        </div>
+                        <div class="twoTeam d-flex flex-row-reverse justify-content-center align-items-center pt-2 gap-3">
+                            <div class="teamHost d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الزمالك</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                            <div class="vs d-flex flex-row justify-content-center align-items-center">x</div>
+                            <div class="teamGuest d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الأهلي</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellMatche col col-md-6 pb-4 p-0">
+                        <div class="date d-flex flex-row-reverse justify-content-center align-items-center">
+                            <div class="day">
+                                <p>السبت</p>
+                            </div>
+                            <div>/</div>
+                            <div class="numberOfDayAndMonth d-flex flex-row-reverse justify-content-center align-items-center">
+                                <div class="numberOfDay">
+                                    <p>11</p>
+                                </div>
+                                <div class="Month"><p>مارس</p></div>
+                            </div>
+
+                        </div>
+                        <div class="matcheTime d-flex flex-row-reverse justify-content-center align-items-center">
+                            <p>7:30 pm</p>
+                        </div>
+                        <div class="twoTeam d-flex flex-row-reverse justify-content-center align-items-center pt-2 gap-3">
+                            <div class="teamHost d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الزمالك</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                            <div class="vs d-flex flex-row justify-content-center align-items-center">x</div>
+                            <div class="teamGuest d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الأهلي</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellMatche col col-md-6 pb-4 p-0">
+                        <div class="date d-flex flex-row-reverse justify-content-center align-items-center">
+                            <div class="day">
+                                <p>السبت</p>
+                            </div>
+                            <div>/</div>
+                            <div class="numberOfDayAndMonth d-flex flex-row-reverse justify-content-center align-items-center">
+                                <div class="numberOfDay">
+                                    <p>11</p>
+                                </div>
+                                <div class="Month"><p>مارس</p></div>
+                            </div>
+
+                        </div>
+                        <div class="matcheTime d-flex flex-row-reverse justify-content-center align-items-center">
+                            <p>7:30 pm</p>
+                        </div>
+                        <div class="twoTeam d-flex flex-row-reverse justify-content-center align-items-center pt-2 gap-3">
+                            <div class="teamHost d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الزمالك</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                            <div class="vs d-flex flex-row justify-content-center align-items-center">x</div>
+                            <div class="teamGuest d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الأهلي</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellMatche col col-md-6 pb-4 p-0">
+                        <div class="date d-flex flex-row-reverse justify-content-center align-items-center">
+                            <div class="day">
+                                <p>السبت</p>
+                            </div>
+                            <div>/</div>
+                            <div class="numberOfDayAndMonth d-flex flex-row-reverse justify-content-center align-items-center">
+                                <div class="numberOfDay">
+                                    <p>11</p>
+                                </div>
+                                <div class="Month"><p>مارس</p></div>
+                            </div>
+
+                        </div>
+                        <div class="matcheTime d-flex flex-row-reverse justify-content-center align-items-center">
+                            <p>7:30 pm</p>
+                        </div>
+                        <div class="twoTeam d-flex flex-row-reverse justify-content-center align-items-center pt-2 gap-3">
+                            <div class="teamHost d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الزمالك</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                            <div class="vs d-flex flex-row justify-content-center align-items-center">x</div>
+                            <div class="teamGuest d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الأهلي</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellMatche col col-md-6 pb-4 p-0">
+                        <div class="date d-flex flex-row-reverse justify-content-center align-items-center">
+                            <div class="day">
+                                <p>السبت</p>
+                            </div>
+                            <div>/</div>
+                            <div class="numberOfDayAndMonth d-flex flex-row-reverse justify-content-center align-items-center">
+                                <div class="numberOfDay">
+                                    <p>11</p>
+                                </div>
+                                <div class="Month"><p>مارس</p></div>
+                            </div>
+
+                        </div>
+                        <div class="matcheTime d-flex flex-row-reverse justify-content-center align-items-center">
+                            <p>7:30 pm</p>
+                        </div>
+                        <div class="twoTeam d-flex flex-row-reverse justify-content-center align-items-center pt-2 gap-3">
+                            <div class="teamHost d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الزمالك</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                            <div class="vs d-flex flex-row justify-content-center align-items-center">x</div>
+                            <div class="teamGuest d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الأهلي</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellMatche col col-md-6 pb-4 p-0">
+                        <div class="date d-flex flex-row-reverse justify-content-center align-items-center">
+                            <div class="day">
+                                <p>السبت</p>
+                            </div>
+                            <div>/</div>
+                            <div class="numberOfDayAndMonth d-flex flex-row-reverse justify-content-center align-items-center">
+                                <div class="numberOfDay">
+                                    <p>11</p>
+                                </div>
+                                <div class="Month"><p>مارس</p></div>
+                            </div>
+
+                        </div>
+                        <div class="matcheTime d-flex flex-row-reverse justify-content-center align-items-center">
+                            <p>7:30 pm</p>
+                        </div>
+                        <div class="twoTeam d-flex flex-row-reverse justify-content-center align-items-center pt-2 gap-3">
+                            <div class="teamHost d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الزمالك</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                            <div class="vs d-flex flex-row justify-content-center align-items-center">x</div>
+                            <div class="teamGuest d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الأهلي</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellMatche col col-md-6 pb-4 p-0">
+                        <div class="date d-flex flex-row-reverse justify-content-center align-items-center">
+                            <div class="day">
+                                <p>السبت</p>
+                            </div>
+                            <div>/</div>
+                            <div class="numberOfDayAndMonth d-flex flex-row-reverse justify-content-center align-items-center">
+                                <div class="numberOfDay">
+                                    <p>11</p>
+                                </div>
+                                <div class="Month"><p>مارس</p></div>
+                            </div>
+
+                        </div>
+                        <div class="matcheTime d-flex flex-row-reverse justify-content-center align-items-center">
+                            <p>7:30 pm</p>
+                        </div>
+                        <div class="twoTeam d-flex flex-row-reverse justify-content-center align-items-center pt-2 gap-3">
+                            <div class="teamHost d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الزمالك</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                            <div class="vs d-flex flex-row justify-content-center align-items-center">x</div>
+                            <div class="teamGuest d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الأهلي</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellMatche col col-md-6 pb-4 p-0">
+                        <div class="date d-flex flex-row-reverse justify-content-center align-items-center">
+                            <div class="day">
+                                <p>السبت</p>
+                            </div>
+                            <div>/</div>
+                            <div class="numberOfDayAndMonth d-flex flex-row-reverse justify-content-center align-items-center">
+                                <div class="numberOfDay">
+                                    <p>11</p>
+                                </div>
+                                <div class="Month"><p>مارس</p></div>
+                            </div>
+
+                        </div>
+                        <div class="matcheTime d-flex flex-row-reverse justify-content-center align-items-center">
+                            <p>7:30 pm</p>
+                        </div>
+                        <div class="twoTeam d-flex flex-row-reverse justify-content-center align-items-center pt-2 gap-3">
+                            <div class="teamHost d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الزمالك</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                            <div class="vs d-flex flex-row justify-content-center align-items-center">x</div>
+                            <div class="teamGuest d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الأهلي</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellMatche col col-md-6 pb-4 p-0">
+                        <div class="date d-flex flex-row-reverse justify-content-center align-items-center">
+                            <div class="day">
+                                <p>السبت</p>
+                            </div>
+                            <div>/</div>
+                            <div class="numberOfDayAndMonth d-flex flex-row-reverse justify-content-center align-items-center">
+                                <div class="numberOfDay">
+                                    <p>11</p>
+                                </div>
+                                <div class="Month"><p>مارس</p></div>
+                            </div>
+
+                        </div>
+                        <div class="matcheTime d-flex flex-row-reverse justify-content-center align-items-center">
+                            <p>7:30 pm</p>
+                        </div>
+                        <div class="twoTeam d-flex flex-row-reverse justify-content-center align-items-center pt-2 gap-3">
+                            <div class="teamHost d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الزمالك</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                            <div class="vs d-flex flex-row justify-content-center align-items-center">x</div>
+                            <div class="teamGuest d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الأهلي</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellMatche col col-md-6 pb-4 p-0">
+                        <div class="date d-flex flex-row-reverse justify-content-center align-items-center">
+                            <div class="day">
+                                <p>السبت</p>
+                            </div>
+                            <div>/</div>
+                            <div class="numberOfDayAndMonth d-flex flex-row-reverse justify-content-center align-items-center">
+                                <div class="numberOfDay">
+                                    <p>11</p>
+                                </div>
+                                <div class="Month"><p>مارس</p></div>
+                            </div>
+
+                        </div>
+                        <div class="matcheTime d-flex flex-row-reverse justify-content-center align-items-center">
+                            <p>7:30 pm</p>
+                        </div>
+                        <div class="twoTeam d-flex flex-row-reverse justify-content-center align-items-center pt-2 gap-3">
+                            <div class="teamHost d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الزمالك</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                            <div class="vs d-flex flex-row justify-content-center align-items-center">x</div>
+                            <div class="teamGuest d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الأهلي</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cellMatche col col-md-6 pb-4 p-0">
+                        <div class="date d-flex flex-row-reverse justify-content-center align-items-center">
+                            <div class="day">
+                                <p>السبت</p>
+                            </div>
+                            <div>/</div>
+                            <div class="numberOfDayAndMonth d-flex flex-row-reverse justify-content-center align-items-center">
+                                <div class="numberOfDay">
+                                    <p>11</p>
+                                </div>
+                                <div class="Month"><p>مارس</p></div>
+                            </div>
+
+                        </div>
+                        <div class="matcheTime d-flex flex-row-reverse justify-content-center align-items-center">
+                            <p>7:30 pm</p>
+                        </div>
+                        <div class="twoTeam d-flex flex-row-reverse justify-content-center align-items-center pt-2 gap-3">
+                            <div class="teamHost d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الزمالك</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                            <div class="vs d-flex flex-row justify-content-center align-items-center">x</div>
+                            <div class="teamGuest d-flex flex-row-reverse justify-content-center align-items-center gap-1">
+                                <div class="teamname">الأهلي</div>
+                                <div class="teamlogo">
+                                    <img src="https://via.placeholder.com/50x50" width="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end football matches  -->
+
+    <!-- end wedgit for currancy&matches&gold -->
     <!-- bootstrap & font-awesome js -->
     <script src="js/bootstrap.bundle.min.js"> </script>
     <script src="js/all.min.js"> </script>
+    <script src="js/editor-profile.js"></script>
+    <script src="js/videoArticle.js"> </script>
+    <script src="js/goldprice.js"> </script>
+    <script src="js/footballMatches.js"> </script>
+
 </body>
 </html>

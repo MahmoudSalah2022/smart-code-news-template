@@ -1,0 +1,57 @@
+ /* start convert currancy */
+
+ .convertCurrancyToggle{
+    width: 170px;
+    background-color: var(--seven-color);
+    padding: 8px;
+    border-radius: 15px 0 0 15px;
+    color:var(--text-color);
+    position:fixed;
+    top: 300px;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    margin-left: 45px;
+    cursor: pointer;
+ }
+
+ .convertCurrancyToggle:hover{
+    left: 91.8%;
+    transform: translate(-50%, -50%);
+    margin-left: 25px;
+ }
+
+ .convertCurrancyToggle > label{
+
+    cursor: pointer;
+
+ }
+
+ .convertCurrancyToggle > li{
+
+    padding-left: 15px;
+
+ }
+
+
+ 
+@media (min-width: 1400px) { 
+    .convertCurrancyToggle:hover{
+        left: 94.8%;
+     }   
+
+ }
+
+@media (min-width: 768px) and (max-width: 1199px) { 
+    .convertCurrancyToggle:hover{
+        left: 88%;
+     }   
+
+ }
+
+ @media (max-width: 767px) { 
+    .convertCurrancyToggle:hover{
+        left: 80%;
+     }
+
+ }
+  /* end convert currancy */
