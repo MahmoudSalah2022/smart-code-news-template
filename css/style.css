@@ -892,7 +892,7 @@ a{
             padding: 25px;  
         }
 
-        .fa-times{
+        .burgermenu  .fa-times{
             color: var(--text-color);
             cursor: pointer;
          }
@@ -924,12 +924,15 @@ a{
         }
 
 
-        .sectiontitle > p{
+        .sectiontitle > p {
             color:var(--text-color);
             font-size: 18px;
             padding: 4px 0;
             border-bottom: 2px solid var(--six-color);
             text-align: right;
+        }
+        .sectiontitle  a {
+            color:var(--text-color);
         }
 
         .notficationtitle > p{
@@ -937,6 +940,11 @@ a{
             font-size: 14px;
             padding: 4px 0;
             text-align: right;
+        }
+
+        .form-check-input:checked {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
         }
 
         /* end Burger Menu */
