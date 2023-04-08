@@ -1,4 +1,5 @@
 @import "header.css";
+@import "footer.css";
 body{
     font-family: 'Cairo', sans-serif;
     padding: 0px;
@@ -76,6 +77,9 @@ a{
 }
 
     /* start content section */
+    .newsSBLock{
+        height: 264px;
+    }
     .NewsBlock{
         gap:16px;
     }
@@ -86,7 +90,11 @@ a{
     }
 
     .styleOne > .imageNews{
+        width: 100%;
         height: 212px;
+        margin-bottom: 16px;
+        background-size: auto;
+        background-repeat: no-repeat;
     }
     .imageNews a{
         text-decoration: none;
@@ -103,9 +111,13 @@ a{
 
     .newsTilteTime{
         width: 100%;
-        height: inherit;
-        margin-top: -20%;
+        height: 212px;
+        position: relative;
+        top: -211px;
+        border-radius: 15px;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 76.04%);
         color: var(--text-color);
+        padding-bottom: 20px;
         padding-left: 20px;
         padding-right: 20px;
         direction: rtl;
@@ -161,6 +173,25 @@ a{
         color: var(--icon-color);
         border-radius: 50px;
         cursor: pointer;
+    }
+    .gallaryImages{
+        width: 36px;
+        height: 36px;
+        background-color: var(--primary-color);
+        color: var(--icon-color);
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .gallaryImages:hover, 
+    .videoFile:hover, 
+    .audioFile:hover{
+        background-color: var(--secondary-color);
+    }
+
+    .moreDot:hover{
+        cursor: pointer;
+        color: var(--secondary-color);
     }
 
     
@@ -235,9 +266,89 @@ a{
 
 /* end audio player */
 
+/* start album slider */
+.showAnddisplay{
+    display: flex !important;
+ }
+
+.albumimageslider{
+    display: none;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.678);
+    z-index: 100;
+}
+
+.imageslider-slider-container {
+    width: 1124px;
+    height: 576px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+}
+
+.imageslider-slider-container::-webkit-scrollbar{
+    display: none;
+}
+
+.imageslider-inner-slider {
+    width: auto;
+    display: flex;
+    gap: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.cardimageslider {
+    width: 1024px;
+    height: 576px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    background-color: var(--fourth-color);
+}
+.cardimageslider > img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+
+/* end album slider */
+
+/* start dot menu */
+.articlessubmenu{
+    display: block;
+    width: 150px;
+    position: relative;
+    top: -161px;
+}
+
+.articlestimeItems {
+    display: none;
+}
+
+.articlestimeItems > li {
+    cursor: pointer;
+}
+.articlestimeItems > li:hover {
+    background-color: var(--fourth-color);
+}
+
+
+/* end dot menu */
+
     .styleTwo{
         width: 320px ;
-        height: auto;
+        height: 140px;
     }
 
     .styleTwo .ST-newsTilteTime{
@@ -347,7 +458,7 @@ a{
 
     .MS-slider-container {
         width: 1000px;
-        height: 132px;
+        height: 133px;
         position: relative;
         top: -120px;
         left: 50%;
@@ -361,7 +472,7 @@ a{
 
     .MS-inner-slider {
         width: 1490px ;
-        height: 132px;
+        height: inherit;
         gap: 10px;
         position: absolute;
         top: 0;
@@ -408,7 +519,7 @@ a{
 
     .MS-card {
         width: 280px;
-        height: 132px;
+        height: inherit;
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
         background-color: var(--six-color);
@@ -446,6 +557,15 @@ a{
 
     .MS-card p{
         padding: 0 16px 8px 16px;
+    }
+
+    .slide-newsTilteTime {
+        width: 100%;
+        height: 133px;
+        position: relative;
+        margin-top: -133px;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 76.04%);
+        border-radius: 15px;
     }
 
     .slide-newstitle{
@@ -511,9 +631,15 @@ a{
         border-radius: 45px 0px 0px 45px;
     }
 
+
     /* end Breaking News */
 
     /* start mainsection*/
+
+    .headermainsection{
+        height: 300px;
+        margin-bottom: 20px;
+    }
 
     .headSectionName{
         display: flex;
@@ -595,6 +721,7 @@ a{
         font-weight: 500;
         font-size: 18px;
         line-height: 34px;
+        color: var(--primary-color);
     }
 
     .follow{
@@ -603,6 +730,13 @@ a{
         height: 25px;
         background-color: var(--fourth-color);
         border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .follow:hover{
+        color: var(--six-color);
+        background-color: var(--primary-color);
+        border-radius: 5px;
     }
 
     .share{
@@ -611,12 +745,20 @@ a{
         height: 25px;
         background-color: var(--fourth-color);
         border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .share:hover{
+        color: var(--six-color);
+        background-color: var(--secondary-color);
+        border-radius: 5px;
     }
 
     /* end article for head of editor */
 
     /* start survy , image album and videos */
     .questionandanswer{
+        height: auto;
         padding: 43px 28px;
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
@@ -625,74 +767,46 @@ a{
         direction: rtl;
     }
 
+    .answer{
+        display: flex;
+    }
+
+    .voteprogres{
+        display: none;
+    }
+
+
 
     /* end survy , image album and videos */
 
+    /* start image and video album */
+
+    .carousel-caption{
+        color:var(--dark-text-color);
+        background-color: var(--six-color);
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 18px;
+    }
+
+    /* end image and video album */
+
+
     /* end content section */
 
-    /* start footer */
-    .footer{
-        width: 100%;
 
-    }
-    .topFooter{
-        width: 100%;
-        /* padding: 35px 129px; */
-        background-color: var(--primary-color);
-    }
+    @media (min-width: 1200px) {
 
-    .footerMenu{
-        font-size: 18px;
-        color: var(--text-color);
-    }
+        /* start breaking news */
 
-    .footerMenu > ul >li > a{
-        color: var(--text-color);
-    }
+        .leftAds, .rightAds {
+            height: 50%;
+            position: sticky;
+            top: 50px;
+        }
 
-    .followUs{
-        color: var(--text-color)
-
-    }
-
-    .followUs > p{
-        font-weight: 600;
-        font-size: 18px;
-        color: var(--text-color)
-
-    }
-    .socialMediaIcon{
-        font-size: 24px;
-    }
-    .socialMediaIcon a{
-        color: var(--text-color);
-        list-style: none;
-    }
-
-    .subscripe {
-        font-size: 18px;
-        font-weight: 600;
-        color: var(--text-color);
-        direction: rtl;
-    }
-
-    .suscripeLabel{
-
-    }
-
-    .subscripe > div > input {
-        width: 100%;
-        padding: 10px 8px;
-        border: 1px solid var(--secondary-color);
-        border-radius: 25px;
-    }
-    .bottomFooter{
-        width: 100%;
-        /* padding: 27px 129px; */
-        background-color: var(--fifth-color);
-        color:var(--text-color);
-    }
-    /* end footer */
+        /* end breaking news */
+     }
 
     @media (min-width: 768px) and (max-width: 1199px) { 
         .newstitle{
@@ -713,12 +827,39 @@ a{
             width: 80%;
         }
 
-    
+        /* start gallary slider */
+        .imageslider-slider-container {
+            width: 80%;
+            height: 100%;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cardimageslider {
+            width: 550px;
+            height: auto;
+        }
+
+        /* start main section */
+        .headermainsection {
+            margin-bottom: 50px;
+        }
+        /* end mainsection */
+
      }
     @media (max-width: 767px) { 
 
+        .bottomHeader{
+            z-index: 100;
+        }
+        .topHeader{
+            z-index: 100;
+        }
+
         .newstitle{
-                width: 258px;
+            width: 258px;
         }
 
             
@@ -814,7 +955,28 @@ a{
         .MS-slider-container {
             width: 80%;
         }
-    
+
+        /* start gallary slider */
+        .imageslider-slider-container {
+            width: 80%;
+            height: 100%;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cardimageslider {
+            width: 250px;
+            height: auto;
+        }
+
+        /* start main section */
+        .headermainsection {
+            margin-bottom: 331px;
+        }
+        /* end mainsection */
+   
     }
 
    

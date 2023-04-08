@@ -28,80 +28,7 @@ burgermenuToggle.addEventListener("mousedown", () => {
 });
 // end open burger menu and close//
 
-// start slider //
 
-// start small slider animation //
-
-let MSsliderContainer = document.querySelector('.MS-slider-container');
-let MSinnerslider = document.querySelector('.MS-inner-slider');
-
-let MSpressed = false;
-let MSstartX;
-let MSx;
-
-MSsliderContainer.addEventListener("mousedown", (e) => {
-    MSpressed = true;
-    MSstartX = e.offsetX - MSinnerslider.offsetLeft;
-    MSsliderContainer.style.cursor = "grabbing";
-    MScheckBoundary();
-});
-
-MSsliderContainer.addEventListener("mouseenter", () => {
-    MSsliderContainer.style.cursor = "grab";
-});
-
-MSsliderContainer.addEventListener("mouseup", () => {
-    MSsliderContainer.style.cursor = "grab";
-    MSpressed = false;
-});
-
-MSsliderContainer.addEventListener("mousemove", (e) => {
-    if (!MSpressed) return;
-    e.preventDefault();
-
-    MSx = e.offsetX;
-
-    MSinnerslider.style.left = `${MSx - MSstartX}px`;
-});
-
-const MScheckBoundary = () => {
-    let outer = MSsliderContainer.getBoundingClientRect();
-    let inner = MSinnerslider.getBoundingClientRect();
-
-    if (parseInt(MSinnerslider.style.left) > 0) {
-        MSinnerslider.style.left = "-474px";
-    }
-
-    if (inner.right < outer.right) {
-        MSinnerslider.style.left = `-${inner.width - outer.width}px`;
-    }
-};
-
-// end small slider animation //
-
-// start change main news slider //
-
-    let mainSlider = document.querySelector('.mainslider')
-    let slideImageNews = document.querySelectorAll('.slide-imageNews');
-    // main news slider data //
-    let mainSlide = document.getElementById('mainslide').style.backgroundImage;
-    let mainImage = mainSlide.match(/url\(["']?([^"']*)["']?\)/)[1];
-    let mainnewstitle = document.querySelector('.MS-newstitle').innerHTML;
-    // small news slider //
-    let smallImage = document.querySelector('.smallSlideIamge').src;
-    let allSmallImage = document.querySelectorAll('.smallSlideIamge');
-
-    let allsmallnewstitle = document.querySelectorAll('.slide-newstitle');
-    for(let i=0 ; i< slideImageNews.length; i++){
-        slideImageNews[i].addEventListener("mouseenter", () => {
-            mainImage = allSmallImage[i].currentSrc ;
-            let mainImageUrl = "url('"+mainImage+"')";
-            document.getElementById('mainslide').style.backgroundImage = mainImageUrl ;
-            document.querySelector('.MS-newstitle').innerHTML = allsmallnewstitle[i].innerHTML;
-        });
-    }
-// end change main news slider //
-// end slider //
 
 // start open video album and close//
 let allcloseVButton = document.querySelectorAll('.closevideo');
@@ -135,3 +62,110 @@ for(let i=0 ; i< allaudioFile.length; i++){
     }
 }
 // end open audio player and close//
+
+// start image slider and close//
+let closeSButton = document.querySelectorAll('#closeSButton');
+let albumimageslider = document.querySelectorAll('#albumimageslider');
+let imagesFile= document.querySelectorAll('#imagesFile');
+for(let i=0 ; i< imagesFile.length; i++){
+    imagesFile[i].addEventListener("mousedown", () => {
+        albumimageslider[i].classList.add('showAnddisplay') ;
+        console.log("test");
+    });
+    for(let i=0 ; i< closeSButton.length; i++){
+        closeSButton[i].addEventListener("mousedown", () => {
+            albumimageslider[i].classList.remove('showAnddisplay') ;
+            console.log("test");
+        });
+    }
+}
+
+// end open image slider and close//
+
+
+// start slider //
+
+let IsliderContainer = document.querySelectorAll('.imageslider-slider-container');
+let IinnerSlider = document.querySelectorAll('.imageslider-inner-slider');
+let albumImageSlider = document.querySelectorAll('.albumimageslider');
+
+let Spressed = false;
+let ISstartISx;
+let ISx;
+for(let i=0 ; i< albumImageSlider.length; i++){
+    IsliderContainer[i].addEventListener("mousedown", (e) => {
+        Spressed = true;
+        ISstartISx = e.offsetX  - IinnerSlider[i].offsetLeft;
+        IsliderContainer[i].style.cursor = "grabbing";
+        IScheckBoundary();
+    });
+
+    IsliderContainer[i].addEventListener("mouseenter", () => {
+        IsliderContainer[i].style.cursor = "grab";
+    });
+
+    IsliderContainer[i].addEventListener("mouseup", () => {
+        IsliderContainer[i].style.cursor = "grab";
+        Spressed = false;
+    });
+
+    IsliderContainer[i].addEventListener("mousemove", (e) => {
+        if (!Spressed) return;
+        e.preventDefault();
+
+        ISx = e.offsetX ;
+
+        IinnerSlider[i].style.left = `${ISx - ISstartISx}px`;
+    });
+
+    const IScheckBoundary = () => {
+        let outer = IsliderContainer[i].getBoundingClientRect();
+        let inner = IinnerSlider[i].getBoundingClientRect();
+
+        if (parseInt(IinnerSlider[i].style.left) > 0) {
+            IinnerSlider[i].style.left = "0px";
+        }
+
+        if (inner.right < outer.right) {
+            IinnerSlider[i].style.left = `-${inner.width - outer.width}px`;
+        }
+    };
+}
+
+// end slider //
+
+// start open three dot and close//
+let articlestimeItems = document.querySelectorAll('.articlestimeItems');
+let moreDot= document.querySelectorAll('.moreDot');
+let sectionTwo = document.querySelectorAll('.sectionTwo');
+for(let i=0 ; i< sectionTwo.length; i++){
+    moreDot[i].addEventListener("mousedown", () => {
+        if(articlestimeItems[i].style.display === "block" ){
+            articlestimeItems[i].style.display = "none" ;
+            console.log("test");
+        }else{
+            articlestimeItems[i].style.display = "block" ;
+            console.log("test");
+        }
+    });
+
+}
+
+// end open three dot and close//
+
+// start show vote resulte //
+
+    let voteprogres = document.querySelector('.voteprogres');
+    let survybutton = document.querySelector('.survybutton');
+    let answer = document.querySelector('.answer');
+
+    survybutton.addEventListener("mousedown", () => {
+        if(voteprogres.style.display === "flex" && answer.style.display === "none"  ){
+            voteprogres.style.display = "none" ;
+            answer.style.display = "none" ;
+        }else{
+            voteprogres.style.display = "flex" ;
+            answer.style.display = "none" ;
+        }
+    });
+// end show vote resulte //

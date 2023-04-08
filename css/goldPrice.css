@@ -1,5 +1,6 @@
-
  /*start gold price */
+ /*start gold price toggle */
+
  .goldpricetoggle{
     width: 150px;
     background-color: var(--golden-color);
@@ -25,6 +26,12 @@
     cursor: pointer;
 
  }
+
+ /* end gold price toggle */
+
+ /*start gold price screen */
+
+
  .showAnddisplay{
     display: flex !important;
  }
@@ -50,6 +57,7 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.678);
+    z-index: 100;
 
 }
 
@@ -154,6 +162,8 @@
     color: var(--text-color);
     width: 100%;
 }
+
+ /*start gold price screen */
 
 @media (min-width: 1400px) { 
     .goldpricetoggle:hover{

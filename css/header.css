@@ -288,7 +288,18 @@
         align-items: center;
     
     }
-    
+
+    .navbarlist > li > a {
+        color:var(--primary-color);
+    }
+
+    .navbarlist > li > a:hover {
+        color:var(--secondary-color);
+    }
+
+    .nav-link:focus, .nav-link:hover {
+        color: var(--secondary-color);
+    }
     /* end bottom header */
 
 

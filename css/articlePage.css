@@ -96,6 +96,11 @@ a{
         display: none;
     }
 
+    .videoArticle > .videoFile{
+        border-radius: 0;
+        background-color: rgb(44 44 44 / 0%) !important;
+    }
+
     .showAnddisplay{
         display: flex !important;
      }
