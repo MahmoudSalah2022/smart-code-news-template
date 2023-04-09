@@ -211,6 +211,7 @@
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
+        background-color: var(--six-color);
         gap: 8px;
         padding: 2px 3px;
         font-size: 12px;
@@ -241,6 +242,7 @@
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
+        background-color: var(--six-color);
         gap: 8px;
         padding: 2px 3px;
         font-size: 12px;
