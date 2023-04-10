@@ -1,15 +1,45 @@
 // start paryer time submenu //
-let PrayerTime = document.getElementById('PrayerTime');
-let paryertimeItems= document.getElementById('paryertimeItems');
 
-PrayerTime.addEventListener("mouseout", () => {
-    paryertimeItems.classList.remove('showAnddisplay') ;
-    console.log("test");
-});
-PrayerTime.addEventListener("mouseover", () => {
-    paryertimeItems.classList.add('showAnddisplay') ;
-    console.log("test");
-});
+var pt = window.matchMedia("(max-width: 425px)");
+function myFunction(pt) {
+    if(pt.matches){
+        //mobile version//
+        let PrayerTime = document.querySelectorAll('.PrayerTime');
+        let paryertimeItems= document.querySelectorAll('.paryertimeItems');
+        for(let p=0 ; p< PrayerTime.length; p++){
+            PrayerTime[p].addEventListener("click", () => {
+                if(paryertimeItems[p].style.display == "block" ){
+                    paryertimeItems[p].style.display = "none" ;
+                    console.log('mobiletoggelblock');
+                }else{
+                    paryertimeItems[p].style.display = "block" ;
+                    console.log('mobiletoggelnone');
+
+                }
+            });
+        } 
+    }else{
+
+        //desktop version//
+        let PrayerTimeHover = document.querySelectorAll('.PrayerTime');
+        let paryertimeItemsHover= document.querySelectorAll('.paryertimeItems');
+        for(let i=0 ; i< PrayerTimeHover.length; i++){
+            PrayerTimeHover[i].addEventListener("mouseout", () => {
+                paryertimeItemsHover[i].style.display = "none" ;
+                    console.log('desktophover');
+                });
+                PrayerTimeHover[i].addEventListener("mouseover", () => {
+                    paryertimeItemsHover[i].style.display = "block" ;
+                        console.log('desktophover');
+                });
+        }
+    
+    }
+}
+myFunction(pt);
+
+
+
 
 // end paryer time submenu //
 
