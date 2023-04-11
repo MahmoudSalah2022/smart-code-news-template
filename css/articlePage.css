@@ -52,6 +52,10 @@ a{
         
     }
 
+    .articleEditor{
+        width:360px;
+    }
+
     .mainarticle{
         direction: rtl;
     }
@@ -161,3 +165,10 @@ a{
 
 
 /* end related news */
+
+@media (max-width: 767px) {
+
+    .articleEditor{
+        width:300px;
+    }
+ }

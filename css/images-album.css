@@ -1,4 +1,4 @@
-
+/* start left sidebar */
 .allSections{
     height: 50%;
     border: 2px solid var(--fourth-color);
@@ -40,8 +40,11 @@
     cursor: pointer;
 }
 
+/* end left sidebar */
+
+
 /* start album slider */
-.showAnddisplay{
+.album .showAnddisplay{
     display: flex !important;
  }
 

@@ -1,3 +1,16 @@
+// start add date to top header // 
+
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("todaydateXlscreen").innerHTML= m + "/" + d + "/" + y;
+document.getElementById("todaydateMdscreen").innerHTML= m + "/" + d + "/" + y;
+document.getElementById("todaydateXsscreen").innerHTML= m + "/" + d + "/" + y;
+
+// end add date to top header // 
+
+
 // start paryer time submenu //
 
 var pt = window.matchMedia("(max-width: 425px)");
@@ -37,9 +50,6 @@ function myFunction(pt) {
     }
 }
 myFunction(pt);
-
-
-
 
 // end paryer time submenu //
 
@@ -113,7 +123,7 @@ for(let i=0 ; i< imagesFile.length; i++){
 // end open image slider and close//
 
 
-// start slider //
+// start album images slider //
 
 let IsliderContainer = document.querySelectorAll('.imageslider-slider-container');
 let IinnerSlider = document.querySelectorAll('.imageslider-inner-slider');
@@ -162,7 +172,7 @@ for(let i=0 ; i< albumImageSlider.length; i++){
     };
 }
 
-// end slider //
+// end album images slider //
 
 // start open three dot and close//
 let articlestimeItems = document.querySelectorAll('.articlestimeItems');
@@ -182,6 +192,28 @@ for(let i=0 ; i< sectionTwo.length; i++){
 }
 
 // end open three dot and close//
+
+// start share button //
+
+    let share = document.querySelectorAll('.share');
+    let shareMenu = document.querySelectorAll('.sharemenu');
+    let sharebutton = document.querySelectorAll('.sharebutton');
+
+    for(let s=0; s< sharebutton.length; s++){
+        share[s].addEventListener("click", () => {
+            if(shareMenu[s].style.display === "block" ){
+                shareMenu[s].style.display = "none" ;
+                console.log("test");
+            }else{
+                shareMenu[s].style.display = "block" ;
+                console.log("test");
+            }
+        });
+
+    }
+
+// end share button //
+
 
 // start show vote resulte //
 

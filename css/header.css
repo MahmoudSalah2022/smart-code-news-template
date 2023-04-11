@@ -38,25 +38,32 @@
     }
     
     .newsText {
-        width: 91%;
+        width: 82%;
         font-size: 14px;
         font-weight: bold;
-        padding-right: 9.1%;
         white-space: nowrap;
         overflow: hidden;
-        position: absolute;
     }
     .newsText > ul {
+        width: calc(443.98px*7);
         overflow: hidden;
+        display: flex;
+        gap: 8px;
+        flex-direction: row;
+        overflow: hidden;
+        animation: newsText 60s linear infinite;
+        direction: rtl;
+        
+    }
+    .newsText > ul > li {
+        display: inline-block;
+        
     }
     .newsText > ul > li > a {
         color:var(--text-color)
     }
 
-    .newsText > ul > li {
-        display: inline-block;
-        animation: newsText 30s linear infinite;
-    }
+
 
     @keyframes newsText {
         0% {
@@ -76,8 +83,26 @@
         justify-content: center;
         background-color: var(--secondary-color);
     }
+
+    #todaydateMdscreen{
+        font-size: 14px;
+    }
+
+    #todaydateXsscreen{
+        font-size: 12px;
+    }
     
     /* end top header */
+
+    /* start editor And Ceo header */
+
+        .editorAndCeoHeader{
+            height: 55px;
+            background-color: var(--eight-color);
+            padding: 10px 9%;
+        }
+
+    /* end editor And Ceo header */
     
     /* start mid header */
 
@@ -100,7 +125,7 @@
     }
     
     .logoAndHead {
-        width: 35%;
+        /* width: 35%; */
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -118,6 +143,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
+        color:var(--secondary-color);
     }
     
     .headOfEditor {
@@ -132,8 +158,18 @@
         font-weight: 500;
     }
     
-    .title {
-        font-size: var(--title);
+    
+    .ceo .title {
+        font-size: 16px;
+        color:var(--secondary-color);
+        font-weight:600;
+        direction: rtl;
+    }
+
+    .headOfEditor .title {
+        font-size: 16px;
+        font-weight: 600;
+        direction: rtl;
     }
     
     .SearchBAr {
@@ -145,7 +181,6 @@
         gap: 24px;
         border: 1px solid var(--secondary-color);
         border-radius: 50px;
-        width: 70%;
         height: 59px;
     
     }
@@ -177,12 +212,12 @@
     }
     
     .headerWidget {
+        /* width: 30%; */
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: flex-end;
         padding-right: 0 16px;
-        width: 30%;
         gap: 16px;
     }
     
@@ -329,11 +364,11 @@
         }
 
         .logoAndHead {
-            width: 45%;
+            /* width: 45%; */
         }
 
         .SearchBAr {
-            width: 55%;
+            width: 70%;
 
         }
 
@@ -357,6 +392,7 @@
         }
         
         .newsText {
+            width: 70%;
             z-index: -2;
             white-space: nowrap;
             padding-right: 5px;
@@ -388,7 +424,7 @@
             width: 100%;
             padding: 15px 15px;
             margin-bottom: 15px;
-            justify-content: space-between;
+            justify-content: end;
             gap:25px;
         }
 
@@ -402,8 +438,9 @@
 
         .head{
             display: flex;
-            flex-direction: row;
-            gap:15px
+            justify-self: start;
+            flex-direction: column;
+            gap:8px
         }
         .SearchBAr {
             width: 100%;

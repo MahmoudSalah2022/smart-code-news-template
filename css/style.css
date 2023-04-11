@@ -329,7 +329,8 @@ a{
     display: block;
     width: 150px;
     position: relative;
-    top: -65%;
+    top: 0;
+    z-index: 200;
 }
 
 .articlestimeItems {
@@ -457,40 +458,41 @@ a{
     }
 
     .MS-slider-container {
-        width: 1000px;
-        height: 133px;
-        position: relative;
-        top: -120px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        overflow: scroll;
+        width: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+        margin-top: -184px;
+        
     }
 
-    .MS-slider-container::-webkit-scrollbar{
-        display: none;
+    .MS-slider-container > ul {
+        width: calc(288px*5);
+        overflow: hidden;
+        display: flex;
+        gap: 8px;
+        flex-direction: row;
+        height: 132px;
+        animation: bannermove 60s linear infinite;
+        direction: rtl;
     }
 
-    .MS-inner-slider {
-        width: 1490px ;
-        height: inherit;
-        gap: 10px;
-        position: absolute;
-        top: 0;
-        left: -474px;
-        -webkit-animation: bannermove 40s linear infinite;
-        -moz-animation: bannermove 40s linear infinite;
-        -ms-animation: bannermove 40s linear infinite;
-        -o-animation: bannermove 40s linear infinite;
-        animation: bannermove 40s linear infinite;
+   .MS-slider-container .frist-slider{
+        margin-left: 0px;
     }
 
-    .MS-inner-slider:hover{
+
+    .MS-slider-container > ul > li {
+        display: inline-block;
+    }
+
+    /* .MS-slider-container >  ul:hover{
         -webkit-animation-play-state:paused;
         -moz-animation-play-state:paused;
         -o-animation-play-state:paused;
         animation-play-state:paused;
         cursor: pointer !important;
-      }
+      } */
 
           /*keyframe animations*/
 
@@ -510,12 +512,11 @@ a{
           100% {
             transform: translate(100%, 0);
           }
-        
         }
 
-        .slide-imageNews{
-            z-index: 100;
-        }
+    .slide-imageNews{
+        z-index: 100;
+    }
 
     .MS-card {
         width: 280px;
@@ -530,16 +531,6 @@ a{
     }
 
 
-    
-    .MS-inner-slider{
-        gap:18px;
-        /* overflow-y: scroll; */
-        -ms-overflow-style: none;
-        scrollbar-width: none; 
-    }
-    .MS-inner-slider::-webkit-scrollbar {
-        display: none;
-      }
     .slide-newstime{
         gap:3px;
         font-size: 14px;
@@ -553,6 +544,7 @@ a{
 
     .MS-card a img{
         border-radius: 15px;
+        object-fit: cover;
     }
 
     .MS-card p{
@@ -581,7 +573,7 @@ a{
         -webkit-line-clamp: 2; /* number of lines to show */
                 line-clamp: 2;
         -webkit-box-orient: vertical;
-        direction: rtl;
+        /* direction: rtl; */
     }
 
     /*end slider*/
@@ -754,6 +746,46 @@ a{
         border-radius: 5px;
     }
 
+    .sharemenu{
+        display: none;
+        z-index: 10;
+    }
+
+    .sharemenulist .facebook{
+        color: rgb(67, 67, 243);
+    }
+
+    .sharemenulist .twitter{
+        color: rgb(67, 187, 243);
+    }
+
+    .sharemenulist .instagram{
+        color: rgb(143, 67, 243);
+    }
+
+    .sharemenulist .whatsapp{
+        color: rgb(25, 172, 45);
+    }
+
+    .sharemenulist .facebook:hover{
+        color:var(--text-color);
+        background-color: rgb(67, 67, 243);
+    }
+
+    .sharemenulist .twitter:hover{
+        color:var(--text-color);
+        background-color: rgb(67, 187, 243);
+    }
+
+    .sharemenulist .instagram:hover{
+        color:var(--text-color);
+        background-color: rgb(143, 67, 243);
+    }
+
+    .sharemenulist .whatsapp:hover{
+        color:var(--text-color);
+        background-color: rgb(25, 172, 45);
+    }
     /* end article for head of editor */
 
     /* start survy , image album and videos */
